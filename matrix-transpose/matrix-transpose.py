@@ -6,4 +6,10 @@ def matrix_transpose(A):
     """
     # Write code here
     A = np.array(A)
-    return A.T
+    h, w = A.shape 
+    at = np.zeros((w, h))
+
+    for i in range(h):
+        for j in range(w):
+            at[j, i] = A[i, j]
+    return at
