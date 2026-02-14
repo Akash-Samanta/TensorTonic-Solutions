@@ -5,9 +5,5 @@ def matrix_trace(A):
     Compute the trace of a square matrix (sum of diagonal elements).
     """
     # Write code here
-    n = len(A)
-    s = 0
-    for i in range(n):
-      s+= A[i][i]
-    return s
-      
+    A = np.array(A)
+    return (A * np.eye(A.shape[0])).sum()
