@@ -4,9 +4,9 @@ def differencing(series, order):
     """
     # Write code here
     for o in range(order):
-        cop = series 
+    
         temp = []
-        for i in range(1, len(cop)):
-            temp.append(cop[i] - cop[i-1])
+        for i in range(1, len(series)):
+            temp.append(series[i] - series[i-1])
         series = temp 
     return series
