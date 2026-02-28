@@ -5,8 +5,8 @@ def swish(x):
     Implement Swish activation function.
     """
     # Write code here
-    x = np.array(x)
+  
     return [
         i / (1 + np.exp(-i))
-        for i in x
+        for i in np.array(x)
     ]
