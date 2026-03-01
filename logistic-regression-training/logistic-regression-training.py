@@ -19,8 +19,7 @@ def train_logistic_regression(X, y, lr=0.1, steps=1000):
         p = _sigmoid(z)
         error = p - y 
         dw = X.T @ error / N 
-        db = np.sum(error) / N
+        db = np.sum(error) / N 
         w -= lr * dw 
         b -= lr * db 
-
     return w, b
