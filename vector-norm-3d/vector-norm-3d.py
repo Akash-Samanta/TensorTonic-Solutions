@@ -6,4 +6,4 @@ def vector_norm_3d(v):
     """
     # Your code here
     v = np.array(v)
-    return np.sqrt(np.sum(v**2, axis=-1))
+    return np.linalg.norm(v, axis=-1)
